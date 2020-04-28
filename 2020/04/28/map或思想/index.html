@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="感谢大佬教我部署博客," />
 
 
 
@@ -79,12 +79,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="123456789 priority_queue&lt;node&gt; Q;     &#x2F;&#x2F;建立优先队列struct node&amp;#123;    friend bool operator &lt; (node a, node b) &#x2F;&#x2F;优先少的    &amp;#123;        return a.step &gt; b.step;    &amp;#125;    int x, y, step;&amp;#125">
+<meta property="og:type" content="article">
+<meta property="og:title" content="map或思想">
+<meta property="og:url" content="http://yoursite.com/2020/04/28/map%E6%88%96%E6%80%9D%E6%83%B3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="123456789 priority_queue&lt;node&gt; Q;     &#x2F;&#x2F;建立优先队列struct node&amp;#123;    friend bool operator &lt; (node a, node b) &#x2F;&#x2F;优先少的    &amp;#123;        return a.step &gt; b.step;    &amp;#125;    int x, y, step;&amp;#125">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-28T09:29:03.000Z">
+<meta property="article:modified_time" content="2020-04-28T09:34:34.682Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="感谢大佬教我部署博客">
 <meta name="twitter:card" content="summary">
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/28/map或思想/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>map或思想 | Hexo</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +218,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/28/map%E6%88%96%E6%80%9D%E6%83%B3/" itemprop="url">map或思想</a></h1>
+          <h1 class="post-title" itemprop="name headline">map或思想</h1>
         
 
         <div class="post-meta">
@@ -298,9 +300,7 @@
       
 
       
-        
-          
-            <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> priority_queue&lt;node&gt; Q;     <span class="comment">//建立优先队列</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (node a, node b) <span class="comment">//优先少的</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> a.<span class="built_in">step</span> &gt; b.<span class="built_in">step</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> x, y, <span class="built_in">step</span>;</span><br><span class="line">&#125;n, m;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> priority_queue&lt;node&gt; Q;     <span class="comment">//建立优先队列</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (node a, node b) <span class="comment">//优先少的</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> a.<span class="built_in">step</span> &gt; b.<span class="built_in">step</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> x, y, <span class="built_in">step</span>;</span><br><span class="line">&#125;n, m;</span><br></pre></td></tr></table></figure>
 
 <p>回忆一下优先队列用法压压惊</p>
 <p>这道题的大意是输入n个字符串</p>
@@ -314,8 +314,6 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">     <span class="keyword">long</span> <span class="keyword">long</span> n,m,sum=<span class="number">1</span>,p[<span class="number">10010</span>];</span><br><span class="line">     <span class="keyword">int</span> ans;</span><br><span class="line">     <span class="keyword">char</span> yi[<span class="number">50</span>];</span><br><span class="line">     <span class="keyword">char</span> cun[<span class="number">10010</span>][<span class="number">50</span>];</span><br><span class="line">     <span class="built_in">scanf</span>(<span class="string">"%lld"</span>,&amp;n);</span><br><span class="line">     <span class="built_in">memset</span>(p,<span class="number">0</span>,<span class="keyword">sizeof</span>(p));</span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">     &#123;</span><br><span class="line">         m=<span class="number">0</span>;</span><br><span class="line">         <span class="built_in">scanf</span>(<span class="string">" %s"</span>,yi);</span><br><span class="line">         <span class="comment">//思想 这就是只存在前i个字符串了</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=sum;j++)<span class="comment">//j不需要到n</span></span><br><span class="line">        &#123;</span><br><span class="line">             <span class="keyword">if</span>(<span class="built_in">strcmp</span>(cun[j],yi)==<span class="number">0</span>)<span class="comment">//</span></span><br><span class="line">             &#123;</span><br><span class="line">                 p[j]++;</span><br><span class="line">                 m=<span class="number">1</span>;</span><br><span class="line">                 ans=j;</span><br><span class="line">                 <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">if</span>(m==<span class="number">0</span>)</span><br><span class="line">         &#123;</span><br><span class="line">             <span class="built_in">printf</span>(<span class="string">"OK\n"</span>);</span><br><span class="line">             <span class="built_in">strcpy</span>(cun[sum],yi);<span class="comment">//优化</span></span><br><span class="line">                 sum++;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">else</span></span><br><span class="line">         &#123;</span><br><span class="line">             <span class="built_in">printf</span>(<span class="string">"%s%lld\n"</span>,yi,p[ans]);</span><br><span class="line">         &#125;</span><br><span class="line">         &#125;</span><br><span class="line">  </span><br><span class="line">     getchar();</span><br><span class="line">     getchar();</span><br><span class="line">       <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -330,265 +328,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/28/test-my-site/" itemprop="url">test_my_site</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-28T16:23:55+08:00">
-                2020-04-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/%E6%84%9F%E8%B0%A2%E5%A4%A7%E4%BD%AC%E6%95%99%E6%88%91%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2/" rel="tag"># 感谢大佬教我部署博客</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/04/28/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+              <a href="/2020/04/28/test-my-site/" rel="next" title="test_my_site">
+                <i class="fa fa-chevron-left"></i> test_my_site
+              </a>
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-04-28T16:18:28+08:00">
-                2020-04-28
-              </time>
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -598,10 +367,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -609,6 +379,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -821,6 +595,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
